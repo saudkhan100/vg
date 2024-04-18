@@ -9,7 +9,7 @@ import Footer from "./home/footer/footer";
 function App() {
   return (
     <div>
-    <Header/>
+    {/* <Header/> */}
     <Routes>
       <Route path="/" element={<Home />} /> {/* Route for Home */}
       <Route path="/about" element={<AboutUs />} /> {/* Route for AboutUs */}
@@ -17,7 +17,7 @@ function App() {
       <Route path="/data/:categoryName" element={<DataPage />} />{" "}
     
     </Routes>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   );
 }
