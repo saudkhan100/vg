@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -28,13 +29,13 @@ and healthcare. Focusing on fulfilling basic human needs, our businesses have pr
                 <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-white">Company</h2>
               </div>
               <ul className="leading-8">
-                <li><a href="about" className="hover:text-blue-400">About Us</a></li>
-                <li><a href="products" className="hover:text-blue-400">Products</a></li>
-                <li><a href="#" className="hover:text-blue-400">Careers</a></li>
-                <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
-                <li><a href="#" className="hover:text-blue-400">Partnerships</a></li>
-                <li><a href="#" className="hover:text-blue-400">Sustainability</a></li>
-              </ul>
+              <li className="mb-4"><Link to="/about" className="block text-lg text-white hover:text-indigo-400">About Us</Link></li>
+      <li className="mb-4"><Link to="/products" className="block text-lg text-white hover:text-indigo-400">Products</Link></li>
+      <li className="mb-4"><Link to="/careers" className="block text-lg text-white hover:text-indigo-400">Careers</Link></li>
+      <li className="mb-4"><Link to="/contact" className="block text-lg text-white hover:text-indigo-400">Contact Us</Link></li>
+      <li className="mb-4"><Link to="/partnerships" className="block text-lg text-white hover:text-indigo-400">Partnerships</Link></li>
+      <li className="mb-4"><Link to="/sustainability" className="block text-lg text-white hover:text-indigo-400">Sustainability</Link></li>
+    </ul>
             </div>
             <div className="px-4 my-4 w-full sm:w-auto">
               <div>

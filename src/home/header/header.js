@@ -96,8 +96,8 @@ const Header = () => {
       <div className={`fixed left-0 top-0 h-screen w-80 ${isDrawerOpen ? '' : '-translate-x-full'} transition-transform duration-300 ease-in-out bg-gradient-to-b from-green-700 to-lime-400`}>
         <div className="p-4">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-semibold text-white">VG SERENGETI</h1>
-            <button onClick={closeDrawer} className="text-gray-400 hover:text-gray-200">
+          <Link to="/" className="text-3xl font-semibold text-white">VG SERENGETI</Link>
+        <button onClick={closeDrawer} className="text-gray-400 hover:text-gray-200">
               {/* Close button */}
               <svg
                 className="w-6 h-6"
@@ -116,13 +116,13 @@ const Header = () => {
             </button>
           </div>
           <ul>
-            <li className="mb-4"><a href="about" className="block text-2xl text-white hover:text-indigo-400">About Us</a></li>
-            <li className="mb-4"><a href="products" className="block text-2xl text-white hover:text-indigo-400">Products</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Careers</a></li>
-            <li className="mb-4"><a href="about" className="block text-2xl text-white hover:text-indigo-400">Contact Us</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Partnerships</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Sustainability</a></li>
-          </ul>
+          <li className="mb-4"><Link to="/about" className="block text-2xl text-white hover:text-indigo-400">About Us</Link></li>
+          <li className="mb-4"><Link to="/products" className="block text-2xl text-white hover:text-indigo-400">Products</Link></li>
+      <li className="mb-4"><Link to="/careers" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
+      <li className="mb-4"><Link to="/contact" className="block text-2xl text-white hover:text-indigo-400">Contact Us</Link></li>
+      <li className="mb-4"><Link to="/partnerships" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>
+      <li className="mb-4"><Link to="/sustainability" className="block text-2xl text-white hover:text-indigo-400">Sustainability</Link></li>
+    </ul>
         </div>
       </div>
     </header>
