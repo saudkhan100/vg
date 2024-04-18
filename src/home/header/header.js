@@ -95,7 +95,7 @@ const Header = () => {
       <div className={`fixed left-0 top-0 h-screen w-80 ${isDrawerOpen ? '' : '-translate-x-full'} transition-transform duration-300 ease-in-out bg-gradient-to-b from-green-700 to-lime-400`}>
         <div className="p-4">
           <div className="flex justify-between items-center mb-8">
-            <h1 className="text-3xl font-semibold text-white">Drawer</h1>
+            <h1 className="text-3xl font-semibold text-white">VG SERENGETI</h1>
             <button onClick={closeDrawer} className="text-gray-400 hover:text-gray-200">
               {/* Close button */}
               <svg
@@ -115,10 +115,12 @@ const Header = () => {
             </button>
           </div>
           <ul>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Home</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">About</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Services</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Contact</a></li>
+            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">About Us</a></li>
+            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Products</a></li>
+            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Careers</a></li>
+            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Contact Us</a></li>
+            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Partnerships</a></li>
+            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Sustainability</a></li>
           </ul>
         </div>
       </div>

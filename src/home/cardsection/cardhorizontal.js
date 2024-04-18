@@ -20,7 +20,7 @@ export default function CardHorizontal() {
             VG SERENGETI GROUP is committed to the highest business, environment and social standards for sustainable inclusive growth. We are expressing the responsibility we feel for our employees, taking important initiatives in education and healthcare. Focusing on fulfilling basic human needs, our businesses have provided a strong contribution towards global economies.
           </p>
           <div className="flex justify-center mt-6">
-            <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">CLICK ME</button>
+            <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-full shadow-lg hover:opacity-80 transition duration-300">CLICK ME</button>
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const ImageOne = () => (
     <div className="absolute inset-0 flex flex-col items-center justify-center">
       <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-8">2023 PRODUCTS AND REPORTS</h2>
       <div>
-        <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Shop Now</button>
+        <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-full shadow-lg hover:opacity-80 transition duration-300">Check Now</button>
       </div>
     </div>
   </div>

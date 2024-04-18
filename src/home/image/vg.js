@@ -3,7 +3,7 @@ import vg from '../vg.png'; // Assuming vg.png is located in the same directory 
 
 const VgImage = () => {
   return (
-    <div className="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
+    <div className="py-20 bg-white grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg lg:overflow-visible">
       <img
         className="object-cover object-center w-full max-w-none h-full"
         src={vg}
