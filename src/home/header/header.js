@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -56,7 +57,7 @@ const Header = () => {
 
         {/* Company Name */}
         <div className="flex justify-center items-center">
-          <h1 className="text-3xl font-bold text-green-700">VG SERENGETTI</h1>
+          <Link to="/" className="text-3xl font-bold text-green-700">VG SERENGETI</Link>
         </div>
 
         {/* Search */}
@@ -115,10 +116,10 @@ const Header = () => {
             </button>
           </div>
           <ul>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">About Us</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Products</a></li>
+            <li className="mb-4"><a href="about" className="block text-2xl text-white hover:text-indigo-400">About Us</a></li>
+            <li className="mb-4"><a href="products" className="block text-2xl text-white hover:text-indigo-400">Products</a></li>
             <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Careers</a></li>
-            <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Contact Us</a></li>
+            <li className="mb-4"><a href="about" className="block text-2xl text-white hover:text-indigo-400">Contact Us</a></li>
             <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Partnerships</a></li>
             <li className="mb-4"><a href="#" className="block text-2xl text-white hover:text-indigo-400">Sustainability</a></li>
           </ul>
