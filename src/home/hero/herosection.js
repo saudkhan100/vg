@@ -1,6 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+
+  const navigate = useNavigate();
   return (
     <header className="bg-white relative flex flex-col items-center justify-center h-screen mb-12 overflow-hidden">
       {/* Text Content */}
@@ -10,7 +13,7 @@ const HeroSection = () => {
       
       {/* Button */}
       <div className="relative z-30">
-  <button className="px-8 py-4 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-regular text-sm rounded-full shadow-lg hover:opacity-80 transition duration-300">Discover who we are</button>
+  <button className="px-8 py-4 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-regular text-sm rounded-full shadow-lg hover:opacity-80 transition duration-300" onClick={()=>navigate("/about")}>Discover who we are</button>
 </div>
 
       

@@ -5,7 +5,7 @@ import productsData from "./data.json";
 const ProductsPage = () => {
   return (
     <div className="container mx-auto py-10">
-      <h1 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-700 ">
+      <h1 className="text-center  mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-700 ">
         Our Products
       </h1>
       <div className="flex justify-center">

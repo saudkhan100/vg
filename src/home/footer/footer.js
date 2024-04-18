@@ -28,8 +28,8 @@ and healthcare. Focusing on fulfilling basic human needs, our businesses have pr
                 <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-white">Company</h2>
               </div>
               <ul className="leading-8">
-                <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-400">Products</a></li>
+                <li><a href="about" className="hover:text-blue-400">About Us</a></li>
+                <li><a href="products" className="hover:text-blue-400">Products</a></li>
                 <li><a href="#" className="hover:text-blue-400">Careers</a></li>
                 <li><a href="#" className="hover:text-blue-400">Contact Us</a></li>
                 <li><a href="#" className="hover:text-blue-400">Partnerships</a></li>
