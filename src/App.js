@@ -5,19 +5,27 @@ import ProductsPage from "./Products/ProductsPage";
 import { Route, Routes } from "react-router-dom";
 import Header from "./home/header/header";
 import Footer from "./home/footer/footer";
+import TeamAll from './team/teamall'
+import locationsData from "./contactus/locations";
+import LocationComponent from "./contactus/locationcomponent";
 
 function App() {
   return (
     <div>
-    {/* <Header/> */}
+   <Header/>
     <Routes>
       <Route path="/" element={<Home />} /> {/* Route for Home */}
       <Route path="/about" element={<AboutUs />} /> {/* Route for AboutUs */}
       <Route path="/products" element={<ProductsPage />} />{" "}
+      <Route path="/teams" element={<TeamAll />} />{" "}
+      <Route
+          path="/contact"
+          element={<LocationComponent locations={locationsData} />} // Passing location data as props
+        />
       <Route path="/data/:categoryName" element={<DataPage />} />{" "}
     
     </Routes>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   );
 }

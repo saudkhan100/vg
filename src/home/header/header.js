@@ -118,6 +118,7 @@ const Header = () => {
           <ul>
           <li className="mb-4"><Link to="/about" className="block text-2xl text-white hover:text-indigo-400">About Us</Link></li>
           <li className="mb-4"><Link to="/products" className="block text-2xl text-white hover:text-indigo-400">Products</Link></li>
+          <li className="mb-4"><Link to="/teams" className="block text-2xl text-white hover:text-indigo-400">Teams</Link></li>
       <li className="mb-4"><Link to="/careers" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
       <li className="mb-4"><Link to="/contact" className="block text-2xl text-white hover:text-indigo-400">Contact Us</Link></li>
       <li className="mb-4"><Link to="/partnerships" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>

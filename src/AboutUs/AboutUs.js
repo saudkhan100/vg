@@ -1,12 +1,13 @@
+import ProductsPage from "../Products/ProductsPage";
 import CardComponent from "./cards";
 import HeadlineCards from "./headlinecard";
 import Main from "./main";
 
 const AboutUs = () => {
     return (
-        <div>
+        <div className="py-10">
             <Main/>
-            <CardComponent/>
+            <ProductsPage/>
             <HeadlineCards/>
         </div>
     );

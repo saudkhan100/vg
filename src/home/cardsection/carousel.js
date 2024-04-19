@@ -17,7 +17,7 @@ const CarouselComponent = () => {
                         Get in touch to find out more
                     </h5>
                     <div className="flex justify-center mt-8">
-                        <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Contact Us</button>
+                        <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Check out</button>
                     </div>
                 </div>
             </div>

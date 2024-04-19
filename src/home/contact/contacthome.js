@@ -1,6 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-const ContactHome = () => (
+
+const ContactHome = () => {
+  const navigate = useNavigate();
+  return(
+  
   <div className="relative max-w-7xl mx-auto mt-20">
     <img
       className="h-96 w-full object-cover rounded-md"
@@ -11,10 +16,11 @@ const ContactHome = () => (
     <div className="absolute inset-0 flex flex-col items-center justify-center">
       <h2 className="text-white text-4xl md:text-5xl lg:text-4xl font-bold mb-8">Get in touch to find out more</h2>
       <div>
-        <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Contact Us</button>
+        <button onClick={()=>navigate("/contact")} className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Contact Us</button>
       </div>
     </div>
   </div>
-);
+  );
+};
 
 export default ContactHome;

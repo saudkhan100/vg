@@ -1,8 +1,11 @@
+
 {
     "categories": [
       {
         "name": "Commodity Trading",
-        "image":"https://th.bing.com/th/id/R.09366331614a48609110a55e60f33c67?rik=oTT%2f2xSGPHnc6w&pid=ImgRaw&r=0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+        "bottomRightImage": "home/cardsection/vg22.png",
+        "image":"home/cardsection/vg22.png",
         "items": [
           {
             "name": "Agricultural Products",

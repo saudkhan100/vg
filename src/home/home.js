@@ -15,7 +15,7 @@ const Home =()=>{
 
     return(
 <div className="bg-white">
-<Header/>
+
 <HeroSection/>
 <CardSection/>
 <ImageOne/>
@@ -25,7 +25,7 @@ const Home =()=>{
 <TeamSection/>
 <LocationsPage/>
 <ContactHome/>
-<Footer/>
+
 
 </div>
     );
