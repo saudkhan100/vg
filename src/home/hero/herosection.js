@@ -8,7 +8,7 @@ const HeroSection = () => {
     <header className="bg-white relative flex flex-col items-center justify-center h-screen mb-12 overflow-hidden">
       {/* Text Content */}
       <div className="relative z-30 p-5 text-4xl text-white bg-opacity-50 rounded-xl mb-8">
-        VG SERENGETI GROUP IS A BRAND OF COMPANIES
+        VG SERENGETI GROUP
       </div>
       
       {/* Button */}

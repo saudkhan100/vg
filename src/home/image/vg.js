@@ -1,5 +1,5 @@
 import React from 'react';
-import vg from '../vg.png'; // Assuming vg.png is located in the same directory as this component
+import vg from '.././vg.png'; // Assuming vg.png is located in the same directory as this component
 
 const VgImage = () => {
   return (

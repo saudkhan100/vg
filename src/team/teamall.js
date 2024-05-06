@@ -8,29 +8,41 @@ const TeamAll = () => {
   const tabs = [
     {
       id: "app",
-      title: "CHAIRMAN",
+      name: "MR. KODZO MASSENYA",
+      title: "(Chairman)",
       description:
-        "In the heart of our company beats the visionary leadership of [Chairman's Name]. From humble beginnings to the pinnacle of corporate governance, his journey embodies resilience, innovation, and unwavering dedication. With a keen eye for opportunity and a commitment to ethical leadership, he has propelled our organization to unprecedented heights. As we look to the future, [Chairman's Name]'s guiding light continues to illuminate our path, inspiring us to reach new horizons and embrace the spirit of excellence.",
+        "With a remarkable 27 years of global trading experience, the Chairman of CG Serengeti Group began his journey in the dynamic realm of oil and gas. His seasoned insights and strategic acumen form the bedrock of our organization's success. Under the guidance of the Chairman, the VG Serengeti team benefits from a wealth of expertise and visionary leadership. Their collective experience and strategic direction serve as the compass navigating our organization toward consistently successful outcomes. It is through their unwavering commitment to excellence that VG Serengeti Group continues to thrive in the intricate and ever-evolving landscape of global trading.",
       image: ch,
     },
     {
       id: "message",
-      title: "COO",
-      description: "Description for Messages",
+      name: "ZAHEER HOSSANY ",
+      title: "(Cheif Of Operations)",
+      description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
       image: saud,
     },
     {
       id: "settings",
-      title: "CEO",
-      description: "Description for Settings",
+      name: "OLEG MICEVIC ",
+      title: "(Sales Director of Gas & Oil)",
+      description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
       image: saud,
     },
     {
       id: "other",
-      title: "MEDIA",
-      description: "Description for Other",
+      name:"JOHANNES HANLEIN",
+      title: "(Director Of Risk)",
+      description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
       image: saud,
     },
+    {
+      id: "team",
+      name:"MATT CAPE",
+      title: "(Chief Executive Officer)",
+      description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
+      image: saud,
+    },
+    
   ];
 
   const handleTabClick = (tab) => {
@@ -38,43 +50,47 @@ const TeamAll = () => {
   };
 
   return (
-    <div className="w-full flex justify-center mt-32">
+    <div className="w-full flex justify-center mt-32 mb-20 ">
       <div className="w-4/5">
-      <h1 className="text-center text-gray-900 text-4xl font-bold mb-8">
-                  Meet the Team
-                </h1>
+        <h1 className="text-center text-gray-900 text-4xl font-bold mb-8">
+          Meet the Team
+        </h1>
         <p className="text-gray-700 text-lg font-light text-center mb-10">
-                  With over 100 years of combined experience, we've got a well-seasoned team at the helm.
-                </p>
+          With over 100 years of combined experience, we've got a well-seasoned
+          team at the helm.
+        </p>
         <div className="relative right-0">
           <ul
-            className="relative flex flex-wrap justify-center gap-4 p-1 list-none rounded-xl bg-blue-gray-50/60 border-b border-blue-500"
+            className="relative flex flex-wrap justify-center gap-4 p-1 list-none rounded-xl border-b border-blue-500"
             data-tabs="tabs"
             role="list"
           >
-            {tabs.map((tab) => (
+            {tabs.map((tab, index) => (
               <li key={tab.id} className="z-30 flex-auto text-center">
                 <button
                   onClick={() => handleTabClick(tab.id)}
-                  className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-2 transition-all ease-in-out  rounded-none cursor-pointer text-slate-700 bg-inherit ${
-                    activeTab === tab.id && ""
+                  className={`z-30 flex items-center justify-center w-full px-4 py-2 mb-2 transition-all ease-in-out rounded-none cursor-pointer text-slate-700 ${
+                    tab.id === "app"
+                      ? "bg-green-500"
+                      : activeTab === tab.id
+                      ? ""
+                      : "hover:text-green-500 hover:underline"
                   }`}
                   data-tab-target=""
                   role="tab"
                   aria-selected={activeTab === tab.id}
                   aria-controls={tab.id}
                 >
-                  <img
-                    className="w-8 h-8 rounded-full mr-2"
-                    src={tab.image}
-                    alt={tab.title}
-                  />{" "}
-                  {/* Circle image */}
                   <span
-                    className={`ml-2 ${activeTab === tab.id && "underline"}`}
+                    className={`ml-2 ${
+                      activeTab === tab.id && "underline"
+                    } ${
+                      tab.id !== "app" && activeTab !== tab.id && "text-gray-700"
+                    }`}
                   >
-                    {tab.title}
+                    {tab.name}
                   </span>
+                  <div className="text-xs text-gray-500">{tab.title}</div>
                 </button>
               </li>
             ))}
@@ -92,9 +108,9 @@ const TeamAll = () => {
                 <div className="flex justify-center">
                   <div className="flex w-full p-3">
                     <div className="w-1/2 pr-4">
-                      <div className="rounded-lg overflow-hidden shadow-lg bg-white">
+                      <div className="rounded-lg overflow-hidden shadow-lg bg-white ">
                         <img
-                          className="w-full h-90 object-cover"
+                          className="w-full h-full object-cover"
                           src={tab.image}
                           alt={tab.title}
                         />

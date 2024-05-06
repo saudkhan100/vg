@@ -1,10 +1,11 @@
 import React from 'react';
+import report from '../../images/report.png'
 
 const ImageOne = () => (
   <div className="relative max-w-7xl mx-auto mt-20">
     <img
       className="h-96 w-full object-cover rounded-md"
-      src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?q=80&w=3869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      src={report}
       alt="Random image"
     />
     <div className="absolute inset-0 bg-gray-700 opacity-60 rounded-md"></div>

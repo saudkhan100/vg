@@ -7,6 +7,9 @@ const LocationsPage = () => {
   const navigate = useNavigate();
   return (
     <div className="py-0 bg-white">
+
+
+
       <h1 className="text-center mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-700">
         Our Locations
       </h1>
