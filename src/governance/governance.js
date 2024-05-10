@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import CardSection from "../home/cardsection/cardsection";
-import HeadlineCards from "./headlinecard";
-import Main from "./main";
+import VgImage from "../home/image/vg";
+import GovImage from "./govImage";
+import GovMain from "./govMain";
 
-const AboutUs = () => {
+const Governance = () => {
   const controls = useAnimation();
 
   useEffect(() => {
@@ -18,12 +18,12 @@ const AboutUs = () => {
   return (
     <motion.div animate={controls} initial={{ opacity: 0, y: 50 }}>
       <div className="py-10">
-        <Main />
-        <CardSection />
-        <HeadlineCards />
+        <GovMain />
+        <GovImage />
+        <VgImage />
       </div>
     </motion.div>
   );
 };
 
-export default AboutUs;
+export default Governance;

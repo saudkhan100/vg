@@ -16,12 +16,7 @@ const Home = () => {
   const controls = useAnimation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      controls.start({ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    controls.start({ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } });
   }, [controls]);
 
   return (

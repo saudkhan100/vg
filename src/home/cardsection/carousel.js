@@ -1,7 +1,9 @@
 import React from 'react';
 import work from '../../images/work.png'; // Import your image here
-
+import { useNavigate } from 'react-router-dom';
 const CarouselComponent = () => {
+    const navigate = useNavigate();
+
     return (
         <div className="relative mx-auto grid grid-cols-7 gap-0 h-[25rem] w-full max-w-7xl flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
 
@@ -18,7 +20,7 @@ const CarouselComponent = () => {
                         Get in touch to find out more
                     </h5>
                     <div className="flex justify-center mt-8">
-                        <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Check out</button>
+                        <button onClick={()=>navigate("/corporategovernance")} className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">Check out</button>
                     </div>
                 </div>
             </div>

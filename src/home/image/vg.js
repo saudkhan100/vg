@@ -1,11 +1,11 @@
 import React from 'react';
-import vg from '.././vg.png'; // Assuming vg.png is located in the same directory as this component
+import vg from '.././vg.png'; 
 
 const VgImage = () => {
   return (
-    <div className="py-20 bg-white grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg lg:overflow-visible">
+    <div className="py-20 bg-white flex justify-center items-center">
       <img
-        className="object-cover object-center w-full max-w-none h-full"
+        className="object-cover object-center max-w-full max-h-full"
         src={vg}
         alt="Vg image"
       />

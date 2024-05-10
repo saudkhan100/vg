@@ -12,7 +12,7 @@ const Footer = () => {
                 <svg version="1.1" viewBox="0 0 3368 512" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fillRule="evenodd">
                       <text fill="white" fontFamily="Nunito-Bold, Nunito" fontSize="400" fontWeight="bold">
-                        <tspan x="654" y="518">VG SERENGETI</tspan>
+                        <tspan x="280" y="518">VG SERENGETI</tspan>
                       </text>
                    
                   </g>
@@ -35,6 +35,7 @@ and healthcare. Focusing on fulfilling basic human needs, our businesses have pr
       <li className="mb-4"><Link to="/contact" className="block text-lg text-white hover:text-indigo-400">Contact Us</Link></li>
       <li className="mb-4"><Link to="/partnerships" className="block text-lg text-white hover:text-indigo-400">Partnerships</Link></li>
       <li className="mb-4"><Link to="/sustainability" className="block text-lg text-white hover:text-indigo-400">Sustainability</Link></li>
+      <li className="mb-4"><Link to="/teams" className="block text-lg text-white hover:text-indigo-400">Teams</Link></li>
     </ul>
             </div>
             <div className="px-4 my-4 w-full sm:w-auto">
@@ -42,11 +43,7 @@ and healthcare. Focusing on fulfilling basic human needs, our businesses have pr
                 <h2 className="inline-block text-2xl pb-4 mb-4 border-b-4 border-white">Blog</h2>
               </div>
               <ul className="leading-8">
-                <li><a href="#" className="hover:text-blue-400">Getting Started With HTML and CSS</a></li>
-                <li><a href="#" className="hover:text-blue-400">What Is Flex And When to Use It?</a></li>
-                <li><a href="#" className="hover:text-blue-400">How TailwindCSS Can Help Your Productivity?</a></li>
-                <li><a href="#" className="hover:text-blue-400">5 Tips to Make Responsive Website</a></li>
-                <li><a href="#" className="hover:text-blue-400">See More</a></li>
+               <p>hello</p>
               </ul>
             </div>
             <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">

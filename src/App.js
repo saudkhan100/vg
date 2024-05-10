@@ -9,6 +9,8 @@ import locationsData from "./contactus/locations";
 import LocationComponent from "./contactus/locationcomponent";
 import ProductPage from "./Products/productpage";
 import SpecificProduct from "./Products/specificproduct";
+import Governance from "./governance/governance";
+import Career from "./career/career";
 
 function App() {
   return (
@@ -19,12 +21,16 @@ function App() {
       <Route path="/about" element={<AboutUs />} />
       <Route path="/products" element={<ProductPage />} />{" "}
       <Route path="/teams" element={<TeamAll />} />{" "}
+      <Route path="/career" element={<Career />} />{" "}
       <Route
           path="/contact"
           element={<LocationComponent locations={locationsData} />}
         />
+
+<Route path="/corporategovernance" element={<Governance />} />   
       <Route path="/data/:categoryName" element={<DataPage />} />{" "}
       <Route path="/details/:productName" element={<SpecificProduct />} />{" "}
+      
     
     </Routes>
     <Footer/>

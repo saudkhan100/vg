@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import ch from "./Picture3.jpg";
-import saud from "./saud1.jpg";
+import sm1 from "./sm1.png";
+import sm2 from "./sm2.png";
+import sm3 from "./sm3.png";
+import sm4 from "./sm4.png";
+import { useState } from "react";
 
 const TeamAll = () => {
   const [activeTab, setActiveTab] = useState("app");
@@ -19,28 +23,28 @@ const TeamAll = () => {
       name: "ZAHEER HOSSANY ",
       title: "(Cheif Of Operations)",
       description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
-      image: saud,
+      image: sm1,
     },
     {
       id: "settings",
       name: "OLEG MICEVIC ",
       title: "(Sales Director of Gas & Oil)",
       description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
-      image: saud,
+      image: sm2,
     },
     {
       id: "other",
       name:"JOHANNES HANLEIN",
       title: "(Director Of Risk)",
       description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
-      image: saud,
+      image: sm3,
     },
     {
       id: "team",
       name:"MATT CAPE",
       title: "(Chief Executive Officer)",
       description: "At the helm of VG Serengeti, our senior management team serves as the cornerstone of executive oversight and strategic decision-making. Drawing on their collective expertise, this dynamic team meticulously evaluates potential trades, scrutinizes financial metrics, ensures compliance, and orchestrates the effective execution of our strategies. The result is a commitment to transactions characterized by low risk and high viability, setting the stage for our continued success in the global trading landscape.",
-      image: saud,
+      image: sm4,
     },
     
   ];
@@ -48,6 +52,11 @@ const TeamAll = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="w-full flex justify-center mt-32 mb-20 ">

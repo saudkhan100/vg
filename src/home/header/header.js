@@ -63,21 +63,7 @@ const Header = () => {
         {/* Search */}
         <div className="mr-4">
           <button onClick={toggleSearch} className="text-green-700 hover:text-gray-200">
-            {/* Icon for toggling the search */}
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M10 18h8m0 0l-3-3m3 3l-3 3m3-3V8a5 5 0 00-10 0v10a5 5 0 0010 0z"
-              ></path>
-            </svg>
+           
           </button>
           {/* Search Input */}
           {isSearchOpen && (
@@ -119,10 +105,10 @@ const Header = () => {
           <li className="mb-4"><Link to="/about" className="block text-2xl text-white hover:text-indigo-400">About Us</Link></li>
           <li className="mb-4"><Link to="/products" className="block text-2xl text-white hover:text-indigo-400">Products</Link></li>
           <li className="mb-4"><Link to="/teams" className="block text-2xl text-white hover:text-indigo-400">Teams</Link></li>
-      <li className="mb-4"><Link to="/careers" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
+      <li className="mb-4"><Link to="/career" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
       <li className="mb-4"><Link to="/contact" className="block text-2xl text-white hover:text-indigo-400">Contact Us</Link></li>
       <li className="mb-4"><Link to="/partnerships" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>
-      <li className="mb-4"><Link to="/sustainability" className="block text-2xl text-white hover:text-indigo-400">Sustainability</Link></li>
+      <li className="mb-4"><Link to="/corporategovernance" className="block text-2xl text-white hover:text-indigo-400">Corporate Governance</Link></li>
     </ul>
         </div>
       </div>
