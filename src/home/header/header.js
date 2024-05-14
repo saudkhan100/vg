@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 py-4 ${isScrolled ? 'bg-white' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 py-4 transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       {/* Drawer Toggle and Search Icon */}
       <div className="flex justify-between items-center">
         {/* Drawer Toggle */}
@@ -107,7 +107,7 @@ const Header = () => {
           <li className="mb-4"><Link to="/teams" className="block text-2xl text-white hover:text-indigo-400">Teams</Link></li>
       <li className="mb-4"><Link to="/career" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
       <li className="mb-4"><Link to="/contact" className="block text-2xl text-white hover:text-indigo-400">Contact Us</Link></li>
-      <li className="mb-4"><Link to="/partnerships" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>
+      <li className="mb-4"><Link to="/partnership" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>
       <li className="mb-4"><Link to="/corporategovernance" className="block text-2xl text-white hover:text-indigo-400">Corporate Governance</Link></li>
     </ul>
         </div>

@@ -11,6 +11,7 @@ import ProductPage from "./Products/productpage";
 import SpecificProduct from "./Products/specificproduct";
 import Governance from "./governance/governance";
 import Career from "./career/career";
+import PartnerShip from "./partnership/partnership";
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
       <Route path="/data/:categoryName" element={<DataPage />} />{" "}
       <Route path="/details/:productName" element={<SpecificProduct />} />{" "}
       
-    
+      <Route path="/partnership" element={<PartnerShip />} />{" "}
     </Routes>
     <Footer/>
     </div>
