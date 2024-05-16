@@ -19,7 +19,11 @@ const LocationComponent = ({ locations }) => {
     window.scrollTo(0, 0);
 
     // Start animation for the component
-    controls.start({ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } });
+    controls.start({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: "easeOut" },
+    });
   }, [controls]);
 
   return (
@@ -30,13 +34,13 @@ const LocationComponent = ({ locations }) => {
       >
         <div className="py-0 bg-white ">
           <h1 className="text-center mb-4 text-4xl font-bold leading-none tracking-tight text-gray-600">
-            Our Locations
+            OUR LOCATIONS
           </h1>
           <p className="text-center mb-6 text-lg font-normal text-gray-600 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
             We operate across a global network <br />
-            Our business brings together an international team based in more than
-            50 locations worldwide and a range of operational locations. We work
-            with producers and customers in over 150 countries.
+            Our business brings together an international team based in more
+            than 50 locations worldwide and a range of operational locations. We
+            work with producers and customers in over 150 countries.
           </p>
 
           <div className="relative mx-auto w-50">

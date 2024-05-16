@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
 import cv from "./cv.jpg";
 
 const Career = () => {
+  useEffect(() => {
+    // Scroll to the top when the page loads
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className="pt-20 min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white"> {/* Added pt-20 for top padding */}
+    <motion.div
+      initial={{ opacity: 0, y: 100 }} // Initial motion from bottom
+      animate={{ opacity: 1, y: 0 }} // Animation to top
+      transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
+      className="pt-20 min-h-screen flex flex-col p-8 sm:p-16 md:p-24 justify-center bg-white"
+    >
       <div data-theme="teal" className="mx-auto max-w-6xl">
         <h2 className="sr-only">Featured case study</h2>
         <section className="font-sans text-black">
@@ -39,13 +50,12 @@ const Career = () => {
                   a team dedicated to excellence, we invite you to submit your
                   CV and cover letter to Info@vgserengeti.com.
                 </p>
-                
               </div>
             </div>
           </div>
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

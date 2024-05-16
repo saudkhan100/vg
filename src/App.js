@@ -12,6 +12,7 @@ import SpecificProduct from "./Products/specificproduct";
 import Governance from "./governance/governance";
 import Career from "./career/career";
 import PartnerShip from "./partnership/partnership";
+import TeamSection from "./team/teamsection";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<AboutUs />} />
       <Route path="/products" element={<ProductPage />} />{" "}
-      <Route path="/teams" element={<TeamAll />} />{" "}
+      <Route path="/teams" element={<TeamSection />} />{" "}
       <Route path="/career" element={<Career />} />{" "}
       <Route
           path="/contact"

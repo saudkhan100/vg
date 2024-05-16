@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div class="py-16 px-16 bg-white">
       <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">
+        <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-8">
           ABOUT US
         </h1>
         <div class="space-y-6 md:space-y-0 md:flex md:gap-2 lg:items-center lg:gap-3">

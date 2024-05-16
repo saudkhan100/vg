@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeadlineCards = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="relative max-w-7xl mx-auto mt-20 flex items-center justify-between">
       <img
@@ -15,8 +18,8 @@ const HeadlineCards = () => {
           Meet VGSERENGETI employees from across the globe
           </h2>
           <div>
-            <button className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">
-              Contact Us
+            <button onClick={()=>navigate("/teams")}  className="px-6 py-3 bg-gradient-to-r from-green-700 to-lime-400 text-white text-lg font-semibold rounded-md shadow-lg hover:opacity-80 transition duration-300">
+              Meet Us
             </button>
           </div>
         </div>
