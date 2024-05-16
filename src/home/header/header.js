@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import vgicon from './vg-icon.png'; 
 
 const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -31,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 py-4 transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 left-0 w-full z-50 py-1  transition-colors duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-transparent'}`}>
       {/* Drawer Toggle and Search Icon */}
       <div className="flex justify-between items-center">
         {/* Drawer Toggle */}
@@ -55,9 +56,12 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Company Name */}
+        {/* Company Name with Logo */}
         <div className="flex justify-center items-center">
-          <Link to="/" className="text-3xl font-bold text-green-700">VG SERENGETI</Link>
+          {/* Logo Icon */}
+          <img src={vgicon} alt="Logo" className="w-20 h-20 mr-2" /> {/* Adjusted width to 20 */}
+          {/* Company Name */}
+          <Link to="/" className="text-3xl font-bold text-green-700 mr-16">VG SERENGETI</Link>
         </div>
 
         {/* Search */}
@@ -82,8 +86,8 @@ const Header = () => {
       <div className={`fixed left-0 top-0 h-screen w-80 ${isDrawerOpen ? '' : '-translate-x-full'} transition-transform duration-300 ease-in-out bg-gradient-to-b from-green-700 to-lime-400`}>
         <div className="p-4">
           <div className="flex justify-between items-center mb-8">
-          <Link to="/" className="text-3xl font-semibold text-white">VG SERENGETI</Link>
-        <button onClick={closeDrawer} className="text-gray-400 hover:text-gray-200">
+            <Link to="/" className="text-3xl font-semibold text-white">VG SERENGETI</Link>
+            <button onClick={closeDrawer} className="text-gray-400 hover:text-gray-200">
               {/* Close button */}
               <svg
                 className="w-6 h-6"
@@ -102,14 +106,14 @@ const Header = () => {
             </button>
           </div>
           <ul>
-          <li className="mb-4"><Link to="/about" className="block text-2xl text-white hover:text-indigo-400">About Us</Link></li>
-          <li className="mb-4"><Link to="/products" className="block text-2xl text-white hover:text-indigo-400">Products</Link></li>
-          <li className="mb-4"><Link to="/teams" className="block text-2xl text-white hover:text-indigo-400">Teams</Link></li>
-      <li className="mb-4"><Link to="/career" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
-      <li className="mb-4"><Link to="/contact" className="block text-2xl text-white hover:text-indigo-400">Contact Us</Link></li>
-      <li className="mb-4"><Link to="/partnership" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>
-      <li className="mb-4"><Link to="/corporategovernance" className="block text-2xl text-white hover:text-indigo-400">Corporate Governance</Link></li>
-    </ul>
+            <li className="mb-4"><Link to="/about" className="block text-2xl text-white hover:text-indigo-400">About Us</Link></li>
+            <li className="mb-4"><Link to="/products" className="block text-2xl text-white hover:text-indigo-400">Products</Link></li>
+            <li className="mb-4"><Link to="/teams" className="block text-2xl text-white hover:text-indigo-400">Teams</Link></li>
+            <li className="mb-4"><Link to="/career" className="block text-2xl text-white hover:text-indigo-400">Careers</Link></li>
+            <li className="mb-4"><Link to="/contact" className="block text-2xl text-white hover:text-indigo-400">Contact Us</Link></li>
+            <li className="mb-4"><Link to="/partnership" className="block text-2xl text-white hover:text-indigo-400">Partnerships</Link></li>
+            <li className="mb-4"><Link to="/corporategovernance" className="block text-2xl text-white hover:text-indigo-400">Corporate Governance</Link></li>
+          </ul>
         </div>
       </div>
     </header>

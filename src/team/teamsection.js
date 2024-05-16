@@ -9,7 +9,7 @@ import Chairman from "./chairman";
 
 const teamMembers = [
   {
-    name: "ZAHEER HOSSANY",
+    name: "ZAHEER HOSANY",
     title: "Chief Of Operations",
     avatar: sm1,
   },
